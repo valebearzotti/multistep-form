@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from './pages/Home'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Form from './pages/Form'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route exact path="/" element={ <Home /> } />
-        <Route exact path="/form" element={ <Form /> } />
+        <Route exact path="/" element={ <Form /> } />
       </Routes>
     </Router>
   </React.StrictMode>,
