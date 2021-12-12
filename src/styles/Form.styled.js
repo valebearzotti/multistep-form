@@ -40,18 +40,18 @@ export const Label = styled.div`
 `
 
 export const Input = styled.input`
-    padding: 14px 16px 14px 50px;
+    padding: 14px 16px 14px ${props => props.icon ? '50px' : '16px'};
     margin-top: 10px;
     border-radius: 10px;
     outline: none;
     display: block;
-    width: 280px;
+    width: ${props => props.icon ? '280px' : '314px'};
     background-color: rgba(255, 255, 255, 0.3);
     border: 2px solid rgba(255, 255, 255, 0.6);
     color: #fff;
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
-    background-image: url(${props => props.icon});
+    background-image: url(${props => props.icon ? props.icon : 'unset'});
     background-position: 10px center;
     background-repeat: no-repeat;
 `

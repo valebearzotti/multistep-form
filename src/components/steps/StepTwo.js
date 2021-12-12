@@ -7,6 +7,13 @@ function StepTwo({setData, data, nextStep, prevStep}) {
 
     return (
         <div>
+            <StepTitle>Shipping method</StepTitle>
+            <Label>Address</Label>
+            <Input type="text" onChange={(e) => setData({...data, address: e.target.value})}/>
+            <Label>City</Label>
+            <Input type="text" onChange={(e) => setData({...data, city: e.target.value})}/>
+            <Label>Zip Code</Label>
+            <Input type="text" onChange={(e) => setData({...data, zip: e.target.value})}/>
             <Buttons>
                 <Previous onClick={prevStep}>Previous</Previous>
                 <Next onClick={nextStep}>Next</Next>

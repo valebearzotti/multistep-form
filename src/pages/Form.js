@@ -13,6 +13,9 @@ function Form() {
         fullName: '',
         email: '',
         phone: '',
+        address: '',
+        city: '',
+        zip: ''
     })
 
     useEffect(() => {
