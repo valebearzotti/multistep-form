@@ -7,7 +7,7 @@ function StepTwo({setData, data, nextStep, prevStep}) {
 
     return (
         <div>
-            <StepTitle>Shipping method</StepTitle>
+            <StepTitle>Shipping information</StepTitle>
             <Label>Address</Label>
             <Input type="text" onChange={(e) => setData({...data, address: e.target.value})}/>
             <Label>City</Label>

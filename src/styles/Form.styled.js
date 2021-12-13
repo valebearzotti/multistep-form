@@ -56,6 +56,37 @@ export const Input = styled.input`
     background-repeat: no-repeat;
 `
 
+export const CreditCard = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    span{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 30px;
+        margin-top: auto;
+        margin-bottom: 5px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+`
+
+export const Field = styled.input`
+    padding: 14px 16px;
+    margin-top: 10px;
+    border-radius: 10px;
+    outline: none;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    ::placeholder{
+        text-align: center;
+    }
+`
+
+
 export const Next = styled.div`
     display: block;
     margin-left: auto;
