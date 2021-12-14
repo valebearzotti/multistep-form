@@ -15,12 +15,14 @@ function Form() {
         phone: '',
         address: '',
         city: '',
-        zip: ''
-    })
-
-    useEffect(() => {
-        console.log(data.fullName)
-        console.log(data.email)
+        zip: '',
+        card: {
+            cardName: '',
+            cardNumber: '',
+            expiracyMonth: '',
+            expiracyYear: '',
+            cvc: ''
+        }
     })
 
     const nextStep = () => {
