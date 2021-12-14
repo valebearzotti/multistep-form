@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import Navbar from '../components/Navbar'
 import { GlobalStyle, Container, Title } from '../styles/Form.styled'
 import StepOne from '../components/steps/StepOne'
