@@ -12,11 +12,11 @@ function StepOne({setData, data, nextStep}) {
         <div>
             <StepTitle>Customer information</StepTitle>
             <Label>Full Name</Label>
-            <Input type="text" onChange={(e) => setData({...data, fullName: e.target.value})} icon={user}/>
+            <Input type="text" onChange={(e) => setData({...data, fullName: e.target.value})} icon={user} value={data.fullName}/>
             <Label>Email Address</Label>
-            <Input type="text" onChange={(e) => setData({...data, email: e.target.value})} icon={email}/>
+            <Input type="text" onChange={(e) => setData({...data, email: e.target.value})} icon={email} value={data.email}/>
             <Label>Phone Number</Label>
-            <Input type="text" onChange={(e) => setData({...data, phone: e.target.value})} icon={phone}/>
+            <Input type="text" onChange={(e) => setData({...data, phone: e.target.value})} icon={phone} value={data.phone}/>
             <Buttons>
                 <Next onClick={nextStep}>Next</Next>
             </Buttons>
