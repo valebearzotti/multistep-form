@@ -9,11 +9,11 @@ function StepTwo({setData, data, nextStep, prevStep}) {
         <div>
             <StepTitle>Shipping information</StepTitle>
             <Label>Address</Label>
-            <Input type="text" onChange={(e) => setData({...data, address: e.target.value})}/>
+            <Input type="text" onChange={(e) => setData({...data, address: e.target.value})} value={data.address}/>
             <Label>City</Label>
-            <Input type="text" onChange={(e) => setData({...data, city: e.target.value})}/>
+            <Input type="text" onChange={(e) => setData({...data, city: e.target.value})} value={data.city}/>
             <Label>Zip Code</Label>
-            <Input type="text" onChange={(e) => setData({...data, zip: e.target.value})}/>
+            <Input type="text" onChange={(e) => setData({...data, zip: e.target.value})} value={data.zip}/>
             <Buttons>
                 <Previous onClick={prevStep}>Previous</Previous>
                 <Next onClick={nextStep}>Next</Next>
