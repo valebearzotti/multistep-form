@@ -58,8 +58,7 @@ export const Input = styled.input`
 
 export const CreditCard = styled.div`
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     span{
         margin-left: 10px;
         margin-right: 10px;
@@ -84,6 +83,19 @@ export const Field = styled.input`
     ::placeholder{
         text-align: center;
     }
+    ::-webkit-outer-spin-button, ::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+`
+
+export const Expiracy = styled.div`
+    display: flex;
+`
+
+export const Fields = styled.div`
+    display: flex;
+    justify-content: space-between;
 `
 
 
