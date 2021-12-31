@@ -56,7 +56,7 @@ export const Input = styled.input`
     background-repeat: no-repeat;
 `
 
-export const CreditCard = styled.div`
+export const CardInformation = styled.div`
     display: flex;
     flex-direction: column;
     span{
